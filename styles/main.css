@@ -7,6 +7,14 @@ font-family: 'Poppins', sans-serif;
 :root {
   --spacer: 3rem;
   --box-shadow: 0.3rem 0.3rem 1.5rem rgb(0, 0, 0, 0.15);
+  --neutral-white: #fffafb;
+  --neutral-black: #050505;
+  --neutral-gray: #4a4a4a;
+  --primary: #24126a;
+  --primary-lighter: #3d2892;
+  --secondary: #1ac3c3;
+  --secondary-lighter: #16e0e0;
+  --accent: #f55d3a;
 }
 
 /* Reset */
@@ -42,3 +50,34 @@ ol[class] {
   margin-top: var(--flow-spacer, var(--spacer));
 }
 /* Start Here */
+
+body {
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.logo {
+  font-size: 2.6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}

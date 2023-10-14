@@ -149,6 +149,8 @@ a {
   }
 }
 
+/* HERO SECTION */
+
 .hero > div {
   height: 100vh;
   display: flex;
@@ -191,6 +193,39 @@ a {
   outline: 0.2rem solid var(--neutral-white);
 }
 
+/* STORIES SECTION */
+.stories {
+  background-color: rgba(5, 5, 5, 0.6);
+}
+.top-stories {
+  text-align: center;
+}
+.story {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 0.1rem solid rgba(255, 255, 255, 0.26);
+  margin: 5rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.4rem;
+  display: flex;
+  gap: 5rem;
+  width: 70%;
+}
+.story-text {
+  text-shadow: -0.2rem 0.2rem 1rem black;
+}
+.story img {
+  border-radius: 1.6rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.26);
+}
+.story2 figure {
+  order: 2;
+}
+
 /* ==============Responsive======== */
 
 .container {
@@ -199,28 +234,35 @@ a {
   margin-right: auto;
   padding: 0 5.2rem;
 }
-@media (min-width: 640px) {
+
+@media (max-width: 1536px) {
   .container {
-    max-width: 640px;
+    max-width: 1536px;
   }
 }
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   .container {
     max-width: 1280px;
   }
 }
-@media (min-width: 1536px) {
+@media (max-width: 1024px) {
   .container {
-    max-width: 1536px;
+    max-width: 1024px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .story {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  .story {
+    display: block;
   }
 }

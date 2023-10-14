@@ -10,15 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <title>spookify |</title>
   </head>
 
   <body>
-    <header>
-      <nav>
-        <p>spookify</p>
-        <ul>
+    <header class="header">
+      <nav class="nav container">
+        <p class="nav-logo">spook<span>ify</span></p>
+        <a class="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </a>
+        <ul class="nav-list">
           <li><a href="#stories">Stories</a></li>
           <li><a href="#authors">Authors</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -26,15 +33,17 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <section class="hero">
         <div>
+          <div class="hero-text">
+            <h1>Tales of the <span>Undead</span></h1>
+            <h2>Scare yourself, scare your friends, for all we care</h2>
+            <a href="#" class="hero-button">Get Started</a>
+          </div>
           <figure>
-            <img src="images/landing-image.png" alt="Pumpkin Image" />
+            <img src="images/pumpkin.png" alt="Pumpkin Image" />
           </figure>
-          <h1>Tales of the Undead</h1>
-          <h2>Scare yourself, scare your friends, for all we care</h2>
-          <a href="#">Get Started</a>
         </div>
       </section>
       <section id="stories" class="stories">
@@ -116,5 +125,6 @@
         </div>
       </footer>
     </main>
+    <script src="js/main.js"></script>
   </body>
 </html>

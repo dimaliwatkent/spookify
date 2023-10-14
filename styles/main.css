@@ -11,10 +11,11 @@ font-family: 'Poppins', sans-serif;
   --neutral-black: #050505;
   --neutral-gray: #4a4a4a;
   --primary: #24126a;
-  --primary-lighter: #3d2892;
+  --primary-lighter: hsl(275, 84%, 49%);
   --secondary: #1ac3c3;
   --secondary-lighter: #16e0e0;
   --accent: #f55d3a;
+  --paddingX: 5.2rem;
 }
 
 /* Reset */
@@ -55,6 +56,14 @@ ol[class] {
 
 body {
   font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--neutral-white);
+  background-color: var(--neutral-black);
+  background-image: url("../images/spookyhouse.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h1 {
@@ -73,13 +82,145 @@ p {
   font-size: 1.8rem;
 }
 
-.logo {
-  font-size: 2.6rem;
-}
-
 html {
   scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-lighter);
+  padding: 4rem 0;
+}
+.nav-logo {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.nav-logo span {
+  color: var(--accent);
+}
+
+.nav-list {
+  display: flex;
+  gap: 2.8rem;
+}
+.nav-list a {
+  color: var(--primary-lighter);
+}
+.nav-list a:hover {
+  color: var(--accent);
+  filter: drop-shadow(0 0 1rem var(--accent));
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 4rem;
+  right: 5.2rem;
+  display: none;
+  font-size: 2.8rem;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-list.active {
+    display: flex;
+    .nav {
+      background-color: #050505;
+    }
+  }
+}
+
+.hero > div {
+  height: 100vh;
+  display: flex;
+  padding-top: 5.2rem;
+}
+.hero-text {
+  flex: 1;
+  position: absolute;
+  bottom: 0;
+  color: var(--primary-lighter);
+  text-shadow: -0.2rem 0.2rem 1rem black;
+  padding-bottom: 5rem;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  padding-bottom: 2.4rem;
+}
+.hero-text span {
+  color: var(--accent);
+}
+
+.hero figure {
+  flex: 1;
+  text-align: right;
+}
+
+.hero img {
+  width: 24rem;
+  height: auto;
+}
+.hero-button {
+  color: var(--accent);
+  outline: 0.2rem solid var(--accent);
+  padding: 0.5rem;
+  border-radius: 9999rem;
+  filter: drop-shadow(0 0 2rem var(--accent));
+}
+.hero-button:hover {
+  color: var(--neutral-white);
+  outline: 0.2rem solid var(--neutral-white);
+}
+
+/* ==============Responsive======== */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5.2rem;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }

@@ -269,6 +269,14 @@ a {
 .authors-list h3 {
   color: var(--primary-lighter);
 }
+.authors-list img {
+  transition: filter 0.3s ease-in-out;
+}
+
+.authors-list img:hover {
+  filter: drop-shadow(0 0 1rem var(--accent));
+}
+
 /* FOOTER */
 
 .copyright {
